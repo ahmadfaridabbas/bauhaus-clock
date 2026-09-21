@@ -9,6 +9,12 @@ for (const button of document.querySelectorAll('[data-style]')) {
     for (const item of document.querySelectorAll('[data-style]')) {
       item.setAttribute('aria-pressed', String(item === button));
     }
+    if (window.matchMedia('(max-width: 680px)').matches) {
+      document.querySelector('.style-preview').scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+        block: 'start'
+      });
+    }
   });
 }
 const dialog = document.querySelector('#image-dialog');
