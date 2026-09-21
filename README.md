@@ -54,18 +54,6 @@ This is a locally signed build, not an Apple-notarized distribution. macOS may r
 
 **Known Tahoe issue:** Options may stop opening after leaving the preview with Done. Quit and reopen System Settings, then open Options again. Native rendering, settings behavior, universal compilation, and signature verification have been tested; installation and System Settings hosting have not been fully validated.
 
-## GitHub Pages website
-
-The complete static website lives in `docs/`. No dependency installation, API keys, or site build is needed. See **[PUBLISHING.md](PUBLISHING.md)** for uploading this folder and enabling the website. All site paths are relative, so they work under any repository name.
-
-For a local preview:
-
-```sh
-python3 -m http.server 8080 --directory docs
-```
-
-Then open `http://localhost:8080`.
-
 ## Credits and licensing status
 
 Based on [BauhausScreensaver](https://github.com/aryanranderiya/BauhausScreensaver) by **Aryan Randeriya**, with subsequent appearance/settings customizations and independent hand styles. Original author notices are retained in the source. This is an independent customization.
