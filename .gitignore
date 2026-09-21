@@ -1,0 +1,6 @@
+.DS_Store
+._*
+*.saver/
+.build/
+*.dSYM/
+tests/hand-styles.png

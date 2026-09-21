@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bauhaus Hands: a customizable macOS clock screensaver with six hand styles, eleven dials, and day and night appearances.">
+  <meta name="theme-color" content="#111213">
+  <title>Bauhaus Hands — A different hand in time.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="#" aria-label="Bauhaus Hands home"><span class="brand-mark" aria-hidden="true">b.</span> BAUHAUS HANDS</a>
+  <nav aria-label="Main navigation"><a href="#hands">The hands</a><a href="#gallery">The dials</a><a href="#install">Install <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy"><p class="eyebrow"><span class="square" aria-hidden="true"></span> A CLOCK SCREENSAVER FOR MAC</p><h1 id="hero-title">A different<br>hand in <em>time.</em></h1><p class="intro">Six hand styles. Eleven dials. A familiar face with a little more room for you.</p><a class="button" href="downloads/BauhausHands-1.0.0.zip" download>Download for macOS <span aria-hidden="true">↓</span></a><p class="requirements">v1.0.0 &nbsp; / &nbsp; macOS 15.5+ &nbsp; / &nbsp; Apple Silicon + Intel</p></div>
+    <figure class="hero-figure"><img src="assets/hero.jpg" width="1600" height="1000" alt="Noir clock dial with luminous cyan Dauphine hour and minute hands and a fine Needle second hand"><figcaption><span>01 / NOIR</span><span>Dauphine + Needle</span></figcaption></figure>
+  </section>
+  <div class="feature-strip wrap"><span>Native macOS screensaver</span><span>Independent hand selection</span><span>Day · Night · System</span><span>Quartz · Mechanical · Smooth</span></div>
+  <section id="hands" class="section wrap" aria-labelledby="hands-title">
+    <div class="section-heading"><p class="eyebrow">01 / THE HANDS</p><h2 id="hands-title">Small changes.<br>Distinct character.</h2><p>Choose the hour, minute, and second hands separately. Keep a matching set or combine your favorites.</p></div>
+    <div class="hands-layout">
+      <figure class="style-preview"><img id="style-image" src="assets/style-dauphine.jpg" width="720" height="720" alt="Dauphine hands on the Original dark dial"><figcaption><span id="style-name">Dauphine</span><span>ORIGINAL DIAL / NIGHT</span></figcaption></figure>
+      <div class="style-list" aria-label="Preview a hand style">
+        <button type="button" data-style="original" aria-pressed="false"><span class="style-number">01</span><span><strong>Original</strong><small>The familiar luminous inset.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+        <button type="button" data-style="baton" aria-pressed="false"><span class="style-number">02</span><span><strong>Baton</strong><small>Straight lines, softly rounded ends.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+        <button type="button" data-style="dauphine" aria-pressed="true"><span class="style-number">03</span><span><strong>Dauphine</strong><small>A broad diamond taper.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+        <button type="button" data-style="leaf" aria-pressed="false"><span class="style-number">04</span><span><strong>Leaf</strong><small>A gently curved silhouette.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+        <button type="button" data-style="sword" aria-pressed="false"><span class="style-number">05</span><span><strong>Sword</strong><small>A narrow stem and angular blade.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+        <button type="button" data-style="needle" aria-pressed="false"><span class="style-number">06</span><span><strong>Needle</strong><small>A fine line with a circular counterweight.</small></span><span class="style-symbol" aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <p class="section-note">The preview shows a matching set. The default screensaver pairs Dauphine hour and minute hands with a Needle second hand.</p>
+    <noscript><p>View each style: <a href="assets/style-original.jpg">Original</a>, <a href="assets/style-baton.jpg">Baton</a>, <a href="assets/style-dauphine.jpg">Dauphine</a>, <a href="assets/style-leaf.jpg">Leaf</a>, <a href="assets/style-sword.jpg">Sword</a>, <a href="assets/style-needle.jpg">Needle</a>.</p></noscript>
+  </section>
+  <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title"><div class="wrap">
+    <div class="section-heading"><p class="eyebrow">02 / THE DIALS</p><h2 id="gallery-title">Find your<br>time of day.</h2><p>Paper texture, coordinated colors, and a choice of numerals. Six looks from the eleven available dials.</p></div>
+    <div class="gallery">
+      <a class="shot" href="assets/turquoise.jpg" data-caption="Turquoise · Baton + Needle · Day"><img loading="lazy" src="assets/turquoise.jpg" width="1000" height="800" alt="Turquoise day dial with rounded Arabic numerals and Baton hands"><span><strong>Turquoise</strong><small>Baton + Needle / Day <b aria-hidden="true">↗</b></small></span></a>
+      <a class="shot" href="assets/ivory.jpg" data-caption="Ivory · Leaf + Needle · Day"><img loading="lazy" src="assets/ivory.jpg" width="1000" height="800" alt="Ivory day dial with Roman numerals and curved Leaf hands"><span><strong>Ivory</strong><small>Leaf + Needle / Day <b aria-hidden="true">↗</b></small></span></a>
+      <a class="shot" href="assets/ocean.jpg" data-caption="Ocean · Sword + Needle · Day"><img loading="lazy" src="assets/ocean.jpg" width="1000" height="800" alt="Deep blue Ocean dial with quarter-hour numerals and Sword hands"><span><strong>Ocean</strong><small>Sword + Needle / Day <b aria-hidden="true">↗</b></small></span></a>
+      <a class="shot" href="assets/rose.jpg" data-caption="Rose · Dauphine + Needle · Day"><img loading="lazy" src="assets/rose.jpg" width="1000" height="800" alt="Rose pink dial with rounded numerals and Dauphine hands"><span><strong>Rose</strong><small>Dauphine + Needle / Day <b aria-hidden="true">↗</b></small></span></a>
+      <a class="shot" href="assets/noir.jpg" data-caption="Noir · Dauphine + Needle · Night"><img loading="lazy" src="assets/noir.jpg" width="1000" height="800" alt="Near-black Noir dial with cyan luminous hands and outer minute numbers"><span><strong>Noir</strong><small>Dauphine + Needle / Night <b aria-hidden="true">↗</b></small></span></a>
+      <a class="shot" href="assets/white.jpg" data-caption="White · Baton + Needle · Day"><img loading="lazy" src="assets/white.jpg" width="1000" height="800" alt="Minimal White dial without numerals, with straight Baton hands"><span><strong>White</strong><small>Baton + Needle / Day <b aria-hidden="true">↗</b></small></span></a>
+    </div>
+    <p class="section-note">Images are native renders of the screensaver at 10:10:35. Select an image to view it larger.</p>
+  </div></section>
+  <section class="section wrap details" aria-labelledby="details-title"><div><p class="eyebrow">03 / THE DETAILS</p><h2 id="details-title">Make it<br>your clock.</h2></div><dl><div><dt>Appearance</dt><dd>Day, Night, or follow your Mac. Eleven dial designs and nine palette choices for the Original dial.</dd></div><div><dt>Movement</dt><dd>A once-per-second Quartz tick, eight-step Mechanical motion, or a continuous Smooth sweep.</dd></div><div><dt>Finishing touches</dt><dd>Arabic, Roman, quarter-hour, or no numerals. Adjust typography, lume, glow, outer minute numbers, and clock size.</dd></div><div><dt>Live preview</dt><dd>See your choices in Options. Save to apply them, or Cancel to keep your previous look.</dd></div></dl></section>
+  <section id="install" class="install-section"><div class="wrap install-layout"><div><p class="eyebrow">04 / ON YOUR MAC</p><h2>Your next<br>idle moment.</h2><a class="button" href="downloads/BauhausHands-1.0.0.zip" download>Download Bauhaus Hands <span aria-hidden="true">↓</span></a><p class="requirements">macOS 15.5 or later · Intel and Apple Silicon</p></div><div><ol class="steps"><li><strong>Download & unzip</strong><p>Open the ZIP to find <code>BauhausHands.saver</code>.</p></li><li><strong>Open the screensaver</strong><p>Double-click it and follow the macOS installation prompt.</p></li><li><strong>Choose your hands</strong><p>Select Bauhaus Hands in System Settings → Screen Saver, then open Options.</p></li></ol><details><summary>Compatibility & installation notes</summary><p>This build is locally signed and is not Apple-notarized. macOS may ask you to approve it in Privacy &amp; Security.</p><p>On macOS Tahoe, Options can stop responding after the preview’s Done button. Quit and reopen System Settings, then try Options again.</p><p>Universal compilation, signature, rendering, and settings checks passed. Installation and System Settings hosting have not been fully validated.</p></details></div></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">b.</span> BAUHAUS HANDS</a><p>Based on <a href="https://github.com/aryanranderiya/BauhausScreensaver">BauhausScreensaver by Aryan Randeriya</a>.<br>An independent customization. Version 1.0.0.</p></footer>
+<dialog id="image-dialog" aria-labelledby="image-caption"><button id="close-dialog" type="button" aria-label="Close enlarged image">Close <span aria-hidden="true">×</span></button><img id="large-image" alt=""><p id="image-caption"></p></dialog>
+</body>
+</html>
