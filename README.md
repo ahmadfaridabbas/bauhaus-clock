@@ -54,36 +54,6 @@ This is a locally signed build, not an Apple-notarized distribution. macOS may r
 
 **Known Tahoe issue:** Options may stop opening after leaving the preview with Done. Quit and reopen System Settings, then open Options again. Native rendering, settings behavior, universal compilation, and signature verification have been tested; installation and System Settings hosting have not been fully validated.
 
-## Build from source
-
-Requires macOS and Apple Command Line Tools (`xcode-select --install`). No third-party libraries or Xcode project are required.
-
-```sh
-bash src/build.sh
-```
-
-Creates `BauhausHands.saver` at the repository root, with both `arm64` and `x86_64` architectures and a local ad-hoc signature.
-
-To rebuild the website's downloadable ZIP:
-
-```sh
-bash scripts/package-release.sh
-```
-
-To regenerate the native screenshots:
-
-```sh
-bash scripts/render-screenshots.sh
-```
-
-The renderer uses a temporary source copy with a fixed display time. The shipped screensaver always displays the current time.
-
-To run the settings and rendering checks:
-
-```sh
-bash scripts/verify.sh
-```
-
 ## GitHub Pages website
 
 The complete static website lives in `docs/`. No dependency installation, API keys, or site build is needed. See **[PUBLISHING.md](PUBLISHING.md)** for uploading this folder and enabling the website. All site paths are relative, so they work under any repository name.
